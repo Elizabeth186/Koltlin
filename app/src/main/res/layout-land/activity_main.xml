@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_claro"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_background"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="20dp"
+            android:text="@string/titulo"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encabezado"
+        app:cardCornerRadius="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+     >
+
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotel"
+
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/encabezado"
+        android:layout_marginLeft="210dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/descripcion_background">
+
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif-black"
+                android:justificationMode="inter_word"
+                android:text="@string/descripcion"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttom_reserva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descripcion"
+                android:layout_centerHorizontal="true"
+                android:width="250dp"
+                android:background="@drawable/boton_background"
+                android:text="@string/reserva"
+
+                />
+
+            <Button
+                android:id="@+id/buttom_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttom_reserva"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:width="250dp"
+                android:background="@drawable/boton_background"
+                android:text="@string/web" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

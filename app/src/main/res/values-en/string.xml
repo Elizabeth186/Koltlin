@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hotel</string>
+    <string name="reserva">Reserve</string>
+    <string name="web">Visit website</string>
+    <string name="titulo">Luxor Sheraton Hotel</string>
+    <string name="descripcion">It is a five-star hotel complex,
+    with magnificent views. It has two swimming pools. The prices of a room vary between 50 to 100 dollars.</string>
+    <string name="nombre">Name</string>
+    <string name="apellido">last name</string>
+    <string name="reservacion">reservation</string>
+    <string name="confirmacion">confirm</string>
+</resources>
